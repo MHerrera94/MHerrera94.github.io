@@ -1,0 +1,245 @@
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+/*Tablet*/
+@media (max-width: 1023px) {
+  /* Menú */
+  .menu__label {
+    display: flex;
+    position: fixed;
+    top: 2.5rem;
+    right: 0;
+    line-height: 2;
+    background: #222;
+    color: #fff;
+    padding: 0 1em;
+    cursor: pointer;
+    z-index: 150;
+  }
+  .menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    background: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    height: 100vh;
+    padding-top: 4em;
+    z-index: 100;
+    transition: all 0.5s;
+  }
+  .menu__list__item a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 2.5;
+    padding: 0 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .menu__checkbox:checked ~ ul {
+    right: 0;
+  }
+  /*title*/
+  .title__profile {
+    width: 35%;
+    max-height: 70%;
+  }
+  .title__container {
+    margin: 0;
+  }
+  .title__bio {
+    font-size: 1.7rem;
+  }
+  /*Sección About*/
+  section.about {
+    width: initial;
+  }
+  .about__container {
+    width: 100%;
+    margin: 0;
+  }
+  .about__title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+  /*Skills*/
+  section.skills {
+    height: 50vh;
+  }
+  .skills__line {
+    flex-direction: row;
+  }
+  .skills__box {
+    width: 31%;
+    height: 50%;
+    margin: 1%;
+  }
+  /*Hobbies*/
+
+  section.hobbies {
+    height: 50vh;
+  }
+  .hobbies__line {
+    flex-direction: row;
+  }
+  .hobbies__box {
+    width: 31%;
+    height: 50%;
+    margin: 1%;
+  }
+  /*Formación Académica*/
+  .academic__courses__item__title {
+    font-size: 1rem;
+  }
+  .academic__courses__item__img img {
+    width: 100%;
+  }
+
+  /*Experiencia Profesional*/
+  .experience__box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .experiencie__box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .experience__img {
+    margin-right: 0;
+    width: 100%;
+  }
+  /*Contacto*/
+  section.formcontato {
+    height: 70vh;
+  }
+  .formcontato__botao {
+    padding: 2% 3%;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+  /*Menu*/
+  .menu__label {
+    top: 1.2rem;
+  }
+
+  /*Titulo*/
+  .title__div {
+    flex-direction: column;
+  }
+  .title__bio {
+    font-size: 1.2rem;
+  }
+  .title__network__item {
+    margin: 0 0.5rem 0 0;
+  }
+  /*Sección sobre mi*/
+
+  /*Skills*/
+  section.skills {
+    height: 90vh;
+  }
+  .skills__title {
+    margin: 2% 0;
+  }
+  .skills__box {
+    width: 48%;
+  }
+  .skills__line {
+    height: 50%;
+  }
+  /*Hobbies*/
+  section.hobbies {
+    height: 90vh;
+  }
+  .hobbies__title {
+    margin: 2% 0;
+  }
+  .hobbies__box {
+    width: 48%;
+  }
+  .hobbies__line {
+    height: 50%;
+  }
+  /*Formación Académica*/
+  section.academic {
+    justify-content: flex-start;
+  }
+  .academic__title {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  .academic__courses {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 80%;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .academic__courses__item__img {
+    height: 45%;
+  }
+  .academic__courses__item__img img {
+    max-width: 50%;
+    margin: 0 auto;
+    max-height: 150px;
+  }
+  .academic__courses__list {
+    height: 100%;
+  }
+  .academic__courses__box {
+    width: 100%;
+    height: 100%;
+  }
+  /*Experiencia Profesional*/
+  .experience__box {
+    height: initial;
+  }
+  .experiencie__box {
+    height: initial;
+  }
+  /*Contacto*/
+  section.formcontato {
+    height: 80vh;
+  }
+  .formcontato--esquerda {
+    display: none;
+  }
+  .formcontato__img {
+    display: none;
+  }
+  .formcontato__contacto {
+    height: 100%;
+  }
+  .formcontato__text {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .formcontato__title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .formcontato__subtext {
+    margin-bottom: 0.5rem;
+  }
+  .formcontato__form {
+    height: 75%;
+  }
+  .formcontato__botao {
+    width: 50%;
+    padding: 3%;
+  }
+  /*Footer*/
+  .footer__rodape {
+    margin: 2em 0;
+  }
+}

@@ -1,0 +1,8 @@
+User-agent: *
+
+Allow: /mi-directorio/mi-archivo.php
+
+Disallow: /email/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
