@@ -11,7 +11,7 @@ coloque nas sessões indicadas*/
   --color-de-link: #000;
   --color-texto: #464646;
   --font-defect: "Raleway";
-  --padding-inicial: 7%;
+  --padding-inicial: 5%;
   --azul-alura: #2a7ae4;
   --color-fondo-verdeClaro: #eaf2fd;
   --margin--botton-form: 1.5em;
@@ -127,6 +127,7 @@ section.title {
   display: flex;
   padding: 0;
   margin: 0 0 1em 0;
+  font-weight: bold;
 }
 .title__network__item {
   font-size: 1em;
@@ -142,7 +143,6 @@ section.about {
   display: flex;
   flex-direction: column;
   width: 60%;
-  margin: 2em 0;
 }
 .about__title {
   font-size: 3rem;

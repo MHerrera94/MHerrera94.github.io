@@ -1,8 +1,9 @@
 User-agent: *
 
-Allow: /mi-directorio/mi-archivo.php
+# Permitir acceso a la raíz (donde está tu index.html)
+Allow: /
 
+# Bloquear directorios internos que no deben ser indexados
 Disallow: /email/
-Disallow: /assets/
-Disallow: /css/
-Disallow: /js/
+
+Sitemap: https://mherrera94.github.io/sitemap.xml
