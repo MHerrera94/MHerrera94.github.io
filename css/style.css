@@ -155,7 +155,7 @@ section.skills {
   display: flex;
   padding: 0 var(--padding-inicial);
   flex-direction: column;
-  height: 45vh;
+  height: 40vh;
 }
 .skills__title {
   font-size: 3rem;
@@ -199,7 +199,7 @@ section.hobbies {
   padding: 0 var(--padding-inicial);
   text-align: center;
   flex-direction: column;
-  height: 45vh;
+  height: 40vh;
 }
 .hobbies__title {
   font-size: 3rem;
@@ -318,8 +318,9 @@ section.experience {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 70vh;
   max-width: 100%;
+  justify-content: center;
+  margin: 0 auto;
 }
 .experiencie__box {
   display: flex;
@@ -327,12 +328,14 @@ section.experience {
   align-items: center;
   height: 70vh;
   max-width: 100%;
+  margin: 0 auto;
 }
 .experience__img {
   display: flex;
   margin-right: 1em;
   width: 70%;
   max-height: 70%;
+  max-width: 700px;
 }
 .experience__info {
   display: flex;

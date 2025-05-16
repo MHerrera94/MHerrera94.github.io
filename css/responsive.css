@@ -1,7 +1,7 @@
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
-@media (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   /* Menú */
   .menu__label {
     display: flex;
@@ -122,7 +122,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   body {
     font-size: 12px;
   }
@@ -172,6 +172,7 @@ Utiliza las referencias de los breakpoints @media abajo */
   /*Formación Académica*/
   section.academic {
     justify-content: flex-start;
+    height: auto;
   }
   .academic__title {
     margin: 1rem 0;
@@ -189,9 +190,9 @@ Utiliza las referencias de los breakpoints @media abajo */
     height: 45%;
   }
   .academic__courses__item__img img {
-    max-width: 50%;
+    width: initial;
     margin: 0 auto;
-    max-height: 150px;
+    max-height: 200px;
   }
   .academic__courses__list {
     height: 100%;
